@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://kit.fontawesome.com/6dda5f6271.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalho de Programação</title>
+</head>
+<body>
+    <header>
+         <div class="container">
+            <div class="logo"><img src="Colégio_Estadual_de_Curitiba-removebg-preview.png"></div>
+           <div class="menuI">
+            <nav>
+                <a href="https://classroom.google.com/c/NzM2NjI1ODk1MjU1">Conteúdos</a>
+                <a href="https://estuda.com/enem/">Provas</a>
+                <a href="https://quizlet.com/br">Atividades</a>
+                <a href="https://aluno.escoladigital.pr.gov.br/escola_parana">Notas</a>
+            </nav>
+        </div>
+
+        <div class="sociais">
+      
+            <a href="https://www.instagram.com/estadualdoparana/"><button><i class="fa-brands fa-square-instagram"></i></button></a>
+            <a href="https://www.youtube.com/watch?v=rppSpobHDqQ"><button><i class="fa-brands fa-square-youtube"></i></button></a>
+            <a href="https://www.cep.pr.gov.br/Pagina/Atendimento"><button><i class="fa-brands fa-square-whatsapp"></i></button></a>
+        </div>
+
+        </div>  
+ 
+        </header>
+        <header>
+        <title>Menu Hambúrguer</title>
+<body>
+    <div class="menu-container">
+        <!-- Ícone de hambúrguer -->
+        <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Menu -->
+        <div class="menu" id="menu">
+            <div class="close-button" onclick="toggleMenu()">X</div>
+            <ul>
+                <li><a href="https://www.historiadomundo.com.br">História</a></li>
+                <li><a href="https://filosofianaescola.com">Sociologia</a></li>
+                <li><a href="https://pt.khanacademy.org/math">Matemática</a></li>
+                <li><a href="https://www.sobiologia.com.br">Biologia</a></li>
+                <li><a href="https://www.soquimica.com.br">Química</a></li>
+            </ul>
+        </div>
+        </div>
+    </body>
+    </header>
+    <header>
+        <section id="Conteúdos">
+            <div>
+                <h2>Conteúdos</h2>
+            <p>
+                O conteúdo poderia ser contextualizado como toda aquela aprendizagem que seria passada pelo professor
+            </p>        
+            </div>
+        </section>
+        <section id="Provas">
+            <div>
+                <h2>Provas</h2>
+            <p>
+                Provas seria um papel com diversas questões sobre o conteúdo passado pelo professor ao passar do trimestre, aqui será postado o dia dessa avaliação e quais assuntos irão ser cobrados.
+            </p>        
+            </div>
+        </section>
+        <section id="Atividades">
+            <div>
+                <h2>Atividades</h2>
+            <p>
+                Nesse site serão postadas diversas questões para você aprimorar o seu conhecimento sobre o tema.
+            </p>        
+            </div>
+        </section>
+        <section id="Notas">
+            <div>
+                <h2>Notas</h2>
+            <p>
+               As notas são uma forma de representar a aprendizagem do aluno no "curso" em forma de números ou letras.
+            </p>        
+            </div>
+        </section>
+    </header>
+    
+            
+    <script>
+        // Função para alternar a visibilidade do menu
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+  <footer>
+    <div class="footer-content">
+    <p>
+  2025 - Portifólio Escolar realizado por Felipe Mayer, Larissa Clazer, Marina, Mel, Lívia.  
+</p>
+
+    </div>
+</footer>
+</body>
+</html>
